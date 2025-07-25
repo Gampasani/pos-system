@@ -1,0 +1,248 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+/* Top Bar */
+.top-bar {
+  background: #ddd;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.top-bar button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  font-weight: bold;
+}
+
+/* Main Layout */
+.main-container {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+
+/* Left Panel */
+.left-panel {
+  width: 70%;
+  background: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.product-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.product-input input {
+  flex: 1;
+  padding: 5px;
+}
+.product-input button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+.product-table th, .product-table td {
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: center;
+}
+
+/* Bottom Panel Style (your marked box) */
+.bottom-left-panel {
+  margin-top: 250px;
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  background: #fff;
+  width: 50%;
+}
+.customer-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.input-row {
+  display: flex;
+  gap: 8px;
+}
+.input-row input {
+  flex: 1;
+}
+.right-summary div {
+  margin-bottom: 4px;
+  font-weight: bold;
+  text-align: right;
+}
+.cutoff {
+  margin-top: 10px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+.cutoff .red { color: red; }
+.cutoff .blue { color: blue; }
+
+/* Right Panel */
+.right-panel {
+  width: 30%;
+  background: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin-bottom: 15px;
+}
+.categories button {
+  padding: 12px;
+  background: #734040;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.right-actions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+}
+.right-actions button {
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.pay { background: green; grid-column: span 2; }
+.red { background: #b00000; }
+.blue { background: #007bff; }
+.purple { background: purple; }
+
+
+/* All buttons */
+button {
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Category Buttons */
+.categories button {
+  background: linear-gradient(to right, #6e3b3b, #823f3f);
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+.categories button:hover {
+  background: linear-gradient(to right, #5a2e2e, #752f2f);
+  transform: scale(1.05);
+}
+
+/* Action Buttons */
+.right-actions button {
+  padding: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+.right-actions button:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+/* Individual colors with gradient */
+.pay {
+  background: linear-gradient(to right, #28a745, #218838);
+  color: white;
+}
+
+.red {
+  background: linear-gradient(to right, #dc3545, #c82333);
+  color: white;
+}
+
+.blue {
+  background: linear-gradient(to right, #007bff, #0069d9);
+  color: white;
+}
+
+.purple {
+  background: linear-gradient(to right, #6f42c1, #5a32a3);
+  color: white;
+}
+
+/* Modal Login */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+.modal-content input {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+.modal-content button {
+  padding: 10px 15px;
+}
+
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+.modal-content input {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+.modal-content button {
+  padding: 10px 15px;
+}

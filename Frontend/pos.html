@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>POS System</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="left-buttons">
+      <button onclick="location.href='register.html'">Register</button>
+      <button onclick="location.href='sales.html'">Sales</button>
+      <button onclick="location.href='reports.html'">Reports</button>
+    </div>
+    <div class="right-buttons">
+      <button onclick="location.href='tasklist.html'">Task List</button>
+      <button onclick="toggleFullScreen()">Fullscreen</button>
+      <button onclick="location.href='customer.html'">Customer Screen</button>
+      <button onclick="location.href='clock.html'">Clock In/Out</button>
+      <button onclick="location.href='admin.html'">Admin</button>
+      <button onclick="showLogin()">Login</button>
+    </div>
+  </div>
+
+  <!-- Main Layout -->
+  <div class="main-container">
+    <!-- Left Panel -->
+    <div class="left-panel">
+      <div class="product-input">
+        <input type="text" id="stockName" placeholder="Stock Code" />
+        <button onclick="addItem()">Add</button>
+        <input type="text" placeholder="Stock Search" />
+      </div>
+
+      <table class="product-table">
+        <thead>
+          <tr>
+            <th>Qty</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Tax</th>
+            <th>Total</th>
+            <th>Options</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="cartBody"></tbody>
+      </table>
+
+      <div class="bottom-left-panel">
+        <div class="customer-form">
+          <div class="left-side">
+            <div class="input-row">
+              <input type="text" placeholder="Customer Mobile" />
+              <button>Options</button>
+            </div>
+            <input type="text" placeholder="Email Receipt" />
+          </div>
+          <div class="right-summary">
+            <div>Total Items: <span id="itemCount">0</span></div>
+            <div>Discount: 0%</div>
+            <div>Subtotal: $<span id="subtotal">0.00</span></div>
+            <div>Tax: $<span id="tax">0.00</span></div>
+            <div>Total: $<span id="total">0.00</span></div>
+          </div>
+        </div>
+        <p class="cutoff">
+          <span class="red">Alcohol Cutoff: 04/22/2004</span> |
+          <span class="blue">Tobacco Cutoff: 04/22/2004</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="right-panel">
+      <div class="categories">
+        <button onclick="addPreset('Soda 20oz.', 1.00)">Soda 20oz.</button>
+        <button onclick="addPreset('ICE BAG', 2.00)">ICE BAG</button>
+        <button onclick="addPreset('Lemons/Limes', 0.75)">Lemons/Limes</button>
+        <button onclick="addPreset('Sodas Single Can', 1.25)">Sodas Single Can</button>
+        <button onclick="addPreset('LIQUOR MART', 5.00)">LIQUOR MART</button>
+        <button onclick="addPreset('LAYS ORIGINAL', 1.75)">LAYS ORIGINAL</button>
+        <button onclick="addPreset('GIFT CARD', 10.00)">GIFT CARD</button>
+      </div>
+
+      <div class="right-actions">
+        <button class="pay" id="payBtn" onclick="pay()">Pay $0.00</button>
+        <button class="blue">Payout</button>
+        <button class="blue">Suspend</button>
+        <button class="blue">Recall</button>
+        <button class="red">Cancel</button>
+        <button class="red">Lotto Sale</button>
+        <button class="red">Lotto Payout</button>
+        <button class="purple">Online Lottery</button>
+        <button class="purple">Online Payout</button>
+        <button class="purple">No Sale</button>
+        <button class="purple">Others</button>
+        <button class="red">Reprint</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+<!-- Login Modal -->
+  <div id="loginModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <h2>Login</h2>
+      <input id="loginUser" type="text" placeholder="Username"><br><br>
+      <input id="loginPass" type="password" placeholder="Password"><br><br>
+      <button onclick="handleLogin()">Login</button>
+        <p>No account? <a href="create-account.html">Create Account</a></p>
+      <button onclick="closeLogin()">Close</button>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
