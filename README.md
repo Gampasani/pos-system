@@ -9,14 +9,23 @@ This is a full-stack **Point of Sale (POS)** system built using:
 ## 📂 Project Structure
 
 pos-system/
+
 ├── Frontend/
+
 │ ├── pos.html
+
 │ ├── style.css
+
 │ └── script.js
+
 ├── Backend/
+
 │ ├── server.js
+
 │ ├── routes/
+
 │ ├── models/
+
 │ └── .env (excluded)
 
 ## 🚀 How to Run the Project
@@ -53,24 +62,15 @@ Basic admin panel
 
 <img width="959" height="425" alt="image" src="https://github.com/user-attachments/assets/0e0a0ea4-cf57-4969-9396-e1b81a41b35a" /> 
 
-Feel free to customize and improve this POS system!
+## 📞 Contact
 
+For any queries, suggestions, or collaborations:
 
-5. Scroll down and click **"Commit new file"**
-
-Done! ✅
-
----
-
-#### ✅ Option B: Create it Locally & Upload
-
-1. Open Notepad or VS Code
-2. Paste the above content
-3. Save the file as `README.md`
-4. Upload it to GitHub via **"Add file" → "Upload files"**
+- **Name**: Teja Gampasani
+- **Email**: gampasaniteja@gmail.com
+- **GitHub**: [@your-username](https://github.com/Gampasani)
+- **LinkedIn**: [linkedin.com/in/your-profile]([https://www.linkedin.com/in/your-profile](https://www.linkedin.com/in/gampasani-teja-995944310/))
 
 ---
 
-Let me know if you'd like help customizing the README further (e.g., adding badges, screenshots, credits, etc.)
-
-
+_Thank you for checking out this project!_
