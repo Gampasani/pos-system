@@ -31,6 +31,7 @@ pos-system/
 ## 🚀 How to Run the Project
 
 ### 🖥 Backend (Node.js + MongoDB)
+
 1. Navigate to the backend folder:
    ```bash
    cd Backend
@@ -38,18 +39,23 @@ pos-system/
    node server.js
    
 2.Make sure MongoDB is running locally at:
+
   mongodb://localhost:27017/posdb
 
 3.🌐 Frontend
+
 Open Frontend/pos.html in a browser.
 
 4.🔐 .env Configuration
+
 Your .env file should look like this:
 
 MONGO_URI=mongodb://localhost:27017/posdb
+
 PORT=5000
 
 📦 Features
+
 Add products, customers, and tasks
 
 Register sales
@@ -68,8 +74,8 @@ For any queries, suggestions, or collaborations:
 
 - **Name**: Teja Gampasani
 - **Email**: gampasaniteja@gmail.com
-- **GitHub**: [@your-username](https://github.com/Gampasani)
-- **LinkedIn**: [linkedin.com/in/your-profile]([https://www.linkedin.com/in/your-profile](https://www.linkedin.com/in/gampasani-teja-995944310/))
+- **GitHub**: [@github](https://github.com/Gampasani)
+- **LinkedIn**: [linkedin](https://www.linkedin.com/in/gampasani-teja-995944310/)
 
 ---
 
